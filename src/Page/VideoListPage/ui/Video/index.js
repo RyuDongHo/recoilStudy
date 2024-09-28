@@ -1,6 +1,6 @@
 import React from "react";
 import STYLE from "./style.js"
-import ProfileImg from "../../../../Shared/styledComponents/ProfileImg"
+import ProfileImg from "../../../../Shared/ui/ProfileImg"
 import { handleNavigation } from "../../../../Shared/model/handleNavigate.js";
 import { useNavigate } from "react-router-dom";
 const Video = (props) => {

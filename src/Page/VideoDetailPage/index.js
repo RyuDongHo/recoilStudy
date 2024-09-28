@@ -5,7 +5,7 @@ import CommentList from "../../Widget/CommentList";
 import CommentInput from "../../Widget/CommentInput";
 import RelatedVideoList from "./ui/RelatedVideoList";
 import STYLE from "./style.js";
-import ProfileImg from "../../Shared/styledComponents/ProfileImg/index.js";
+import ProfileImg from "../../Shared/ui/ProfileImg/index.js";
 
 const VideoDetail = () => {
   const idx = useParams().id;

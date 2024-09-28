@@ -1,6 +1,6 @@
 import React from "react";
 import STYLE from "./style.js";
-import ProfileImg from "../../Shared/styledComponents/ProfileImg/index.js";
+import ProfileImg from "../../Shared/ui/ProfileImg/index.js";
 import profileImgSrc from "./assets/profile1.png";
 const CommentInput = () => {
   return (

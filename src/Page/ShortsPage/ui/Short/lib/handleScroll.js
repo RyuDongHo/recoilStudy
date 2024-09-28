@@ -7,7 +7,7 @@ const useHandleScroll = (idx) => {
 
   React.useEffect(()=>{
     window.addEventListener("wheel", (event) => {
-      if (event.deltaY > 100) {
+      if (event.deltaY > 0) {
         handleNavigation(navigate, `/shorts/${parseInt(++idx)}`)
       } else {
         if(parseInt(idx) <= 0) return;

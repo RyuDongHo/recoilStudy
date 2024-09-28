@@ -4,7 +4,7 @@ import CommentList from "../../../../Widget/CommentList";
 import glassImg from "../../../../Shared/assets/glass.svg";
 import thumbImg from "../../../../Shared/assets/thumb2.png";
 import STYLE from "./style.js";
-import ProfileImg from "../../../../Shared/styledComponents/ProfileImg";
+import ProfileImg from "../../../../Shared/ui/ProfileImg";
 import useShort from "./api/useShort.js";
 import useCommentsArea from "./model/useCommentsArea.js";
 import handleScroll from "./lib/handleScroll.js";

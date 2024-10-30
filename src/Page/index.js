@@ -2,6 +2,7 @@ import React from "react";
 import VideoListPage from "./VideoListPage";
 import VideoDetail from "./VideoDetailPage";
 import ShortsPage from "./ShortsPage";
+import SignUpPage from "./SignUpPage";
 import Aside from "./ui/Aside";
 import { Routes, Route } from "react-router-dom";
 
@@ -16,6 +17,7 @@ const Page = () => {
         <Route path="/" element={<VideoListPage />} />
         <Route path="/video-detail/:id" element={<VideoDetail />} />
         <Route path="/shorts/:id" element={<ShortsPage />} />
+        <Route path="/sign-up" element={<SignUpPage />} />
       </Routes>
     </main>
   );

@@ -6,8 +6,8 @@ import thumbImg from "../../../../Shared/assets/thumb2.png";
 import STYLE from "./style.js";
 import ProfileImg from "../../../../Shared/ui/ProfileImg";
 import useShort from "./api/useShort.js";
-import useCommentsArea from "./model/useCommentsArea.js";
 import handleScroll from "./lib/handleScroll.js";
+import useCommentsAreaAtom from "../../../../Shared/recoil/useCommentsAreaAtom.js";
 
 const shortTabs = [
   {
@@ -53,7 +53,7 @@ const Short = (props) => {
   const {idx} = props;
   handleScroll(idx);
   
-  const [commentsArea, commentTabClickEvent] = useCommentsArea();
+  const [commentsArea, commentTabClickEvent] = useCommentsAreaAtom();
 
   const  [shortState]  = useShort(idx);
   if(!shortState) return null;

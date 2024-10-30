@@ -1,20 +1,17 @@
 import { getCookie, setCookie } from "../../Shared/util/cookies";
-import { useSelector, useDispatch } from "react-redux";
-import { TOGGLE_THEME } from "../../Shared/redux/action.js";
-
+import useThemeAtom from "../../Shared/recoil/useThemeAtom";
 const useTheme = () => {
-  const dispatch = useDispatch();
-  const theme = useSelector((store) => store.theme);
+  const [theme, setThemeEvent] = useThemeAtom();
 
   const toggleTheme = () => {
-    const currentTheme = getCookie("theme");
+    const currentTheme = getCookie("theme") || "light";
     switch (currentTheme) {
       case "light":
-        dispatch(TOGGLE_THEME('dark'));
+        setThemeEvent("dark");
         setCookie("theme", "dark", { path: "/" });
         return;
       case "dark":
-        dispatch(TOGGLE_THEME('light'));
+        setThemeEvent("light");
         setCookie("theme", "light", { path: "/" });
         return;
       default:
